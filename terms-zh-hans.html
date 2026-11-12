@@ -1,97 +1,107 @@
 <!doctype html>
 <html lang="zh-Hans">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Savio 使用条款</title>
-  <style>
-    :root { color-scheme: light dark; }
-    body { font-family: -apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans SC","Microsoft YaHei","Segoe UI",Roboto,Helvetica,Arial,sans-serif; line-height: 1.7; margin: 0; padding: 24px; }
-    .container { max-width: 920px; margin: 0 auto; }
-    h1 { margin: 0 0 8px; font-size: 28px; }
-    .meta { color: #666; font-size: 14px; margin: 0 0 24px; }
-    h2 { margin: 28px 0 8px; font-size: 18px; }
-    p { margin: 8px 0; }
-    code { font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace; }
-    .note { padding: 12px 14px; border: 1px solid rgba(127,127,127,.35); border-radius: 12px; margin: 12px 0; }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="了解 Savio 的使用规则、订阅与 AI 额度，以及你的权益。">
+<title>Savio · 服务条款</title>
+<link rel="canonical" href="https://harperchang2025-ship-it.github.io/savio-legal/terms-zh-hans.html">
+<link rel="alternate" hreflang="en" href="https://harperchang2025-ship-it.github.io/savio-legal/terms-en.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://harperchang2025-ship-it.github.io/savio-legal/terms-zh-hant.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://harperchang2025-ship-it.github.io/savio-legal/terms-zh-hans.html">
+<style>
+:root { color-scheme: light dark; --bg:#f5f7f5; --surface:#ffffff; --ink:#192d29; --muted:#52645e; --line:#d5dfd9; --accent:#17634e; --wash:#eaf3ed; }
+* { box-sizing:border-box; }
+html { scroll-padding-top:1.5rem; -webkit-font-smoothing:antialiased; }
+body { margin:0; background:var(--bg); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang TC","PingFang SC","Microsoft JhengHei",sans-serif; font-size:1.0625rem; line-height:1.75; }
+a { color:var(--accent); text-underline-offset:.2em; overflow-wrap:anywhere; }
+a:hover { text-decoration-thickness:2px; }
+a:focus-visible,summary:focus-visible { outline:3px solid var(--accent); outline-offset:4px; border-radius:4px; }
+.shell { width:min(100% - 3rem,74ch); margin-inline:auto; }
+.skip { position:absolute; top:-8rem; left:1rem; padding:.7rem 1rem; background:var(--surface); z-index:2; }
+.skip:focus { top:1rem; }
+.topbar { display:flex; align-items:center; justify-content:space-between; gap:1rem; padding-block:1.5rem; border-bottom:1px solid var(--line); }
+.brand { font-size:1.5rem; font-weight:750; letter-spacing:-.03em; }
+.languages { display:flex; flex-wrap:wrap; align-items:center; gap:.3rem; }
+.languages a { display:inline-flex; align-items:center; justify-content:center; min-height:44px; padding:.35rem .75rem; font-size:.875rem; font-weight:600; text-decoration:none; border:1px solid transparent; border-radius:100px; }
+.languages a[aria-current=page] { border-color:var(--line); background:var(--surface); color:var(--ink); }
+.hero { padding-block:3.5rem 1.5rem; }
+h1 { margin:0 0 1.25rem; font-size:clamp(2rem,6vw,3.1rem); line-height:1.2; letter-spacing:-.025em; text-wrap:balance; }
+.intro { margin:0 0 1rem; font-size:1.125rem; color:var(--muted); }
+.meta { color:var(--muted); font-size:.875rem; margin:.35rem 0; }
+.contact { background:var(--wash); border:1px solid var(--line); border-radius:16px; padding:1.5rem; margin:1rem 0 1.5rem; }
+.contact h2 { font-size:1.125rem; margin:0 0 .5rem; }
+.contact p { margin:.5rem 0; }
+.contact .email { display:inline-block; padding-block:.35rem; font-weight:650; }
+.contact .hint { font-size:.875rem; color:var(--muted); }
+details { border-block:1px solid var(--line); padding-block:.3rem; margin:0 0 2.5rem; }
+summary { cursor:pointer; min-height:44px; padding:.65rem 0; font-weight:600; }
+.toc { display:grid; grid-template-columns:1fr 1fr; column-gap:1.75rem; padding:0 0 1rem 1.5rem; margin:.25rem 0 0; font-size:.9375rem; }
+.toc li { padding-block:.2rem; }
+article > section { padding-block:0 1.75rem; margin-bottom:1.75rem; border-bottom:1px solid var(--line); }
+h2 { margin:0 0 1rem; font-size:1.375rem; line-height:1.35; text-wrap:balance; }
+h3 { margin:1.5rem 0 .5rem; font-size:1.125rem; line-height:1.4; }
+p { margin:.85rem 0; overflow-wrap:break-word; text-wrap:pretty; }
+footer { display:flex; flex-wrap:wrap; justify-content:space-between; gap:1rem; color:var(--muted); font-size:.875rem; padding:0 0 2.5rem; }
+@media(max-width:520px) { .shell { width:calc(100% - 2.25rem); } .topbar { align-items:flex-start; flex-direction:column; gap:.5rem; padding-block:1.1rem; } .hero { padding-top:2.25rem; } .contact { padding:1.15rem; } .toc { grid-template-columns:1fr; } }
+@media(prefers-color-scheme:dark) { :root { --bg:#151d1b; --surface:#202b27; --ink:#ecf3ef; --muted:#b2c3b9; --line:#3b4c43; --accent:#9edfc0; --wash:#202f28; } }
+@media print { :root { color-scheme:light; --bg:white; --ink:black; --muted:#444; --line:#ccc; --accent:#174d3a; --wash:white; } .languages,details,.skip,footer a { display:none; } .shell { width:100%; max-width:none; } .hero { padding-top:1rem; } .contact { break-inside:avoid; } h2,h3 { break-after:avoid; } }
+</style>
 </head>
-<body>
-  <main class="container">
-      <h1>Savio 使用条款</h1>
-      <div class="meta">最后更新：十二月 2025</div>
-
-      <h3>概述</h3>
-      <p>本使用条款规范你对 Savio（下称“本 App”）的使用。安装或使用本 App 即表示你同意本条款与隐私政策。</p>
-
-      <h3>使用资格</h3>
-      <p>你必须年满 13 岁（或你所在地区法律要求的年龄）才能使用本 App。</p>
-
-      <h3>授权</h3>
-      <p>
-        我们授予你个人、非独占、可撤销、不可转让的许可，用于个人理财管理。
-        除法律允许外，你不得复制、修改、逆向工程或转售本 App。
-      </p>
-
-      <h3>可接受使用</h3>
-      <ul>
-        <li>不得滥用本 App 或干扰其运行。</li>
-        <li>不得尝试访问未获授权的系统或数据。</li>
-        <li>不得提交违法、有害或误导性内容。</li>
-      </ul>
-
-      <h3>你的数据</h3>
-      <p>
-        你拥有你输入的记账、预算与目标数据。我们仅在提供本 App 服务、你请求的功能（包括 AI 功能）、客服支持及符合法律要求时，
-        以有限许可处理这些数据。你需自行确保输入准确，并在需要时自行备份。
-      </p>
-
-      <h3>AI 功能与输出</h3>
-      <p class="note">
-        AI 输出为自动生成的建议，仅供信息参考，不构成财务、投资、税务、会计、法律或其他专业建议。
-        采取行动前请自行核实，必要时咨询专业人士。
-      </p>
-      <p>
-        AI 的解析结果可能不完全准确。请在保存或采取行动前，先检查并确认所有解析出的记录与建议。
-      </p>
-
-      <h3>订阅 / 应用内购买（如提供）</h3>
-      <p>
-        若本 App 提供付费功能、订阅或内购，价格与条款将于 App 内显示。付款由 Apple 通过你的 Apple ID 处理，
-        我们不会获得你的完整支付卡信息。
-      </p>
-      <ul>
-        <li>订阅将自动续订，除非你在当前周期结束前至少 24 小时取消。</li>
-        <li>你可在 Apple ID 账户设置中管理或取消订阅。</li>
-        <li>退款通常由 Apple 按其政策处理，法律另有规定的除外。</li>
-      </ul>
-
-      <h3>第三方服务</h3>
-      <p>
-        本 App 可能依赖第三方服务（如云托管、AI 处理）来提供功能。相关服务可能受其条款约束；
-        我们仍依据本条款向你提供本 App。
-      </p>
-
-      <h3>免责声明</h3>
-      <p>本 App 按“现状”与“可用性”提供；在法律允许的最大范围内，我们排除默示担保。</p>
-
-      <h3>责任限制</h3>
-      <p>
-        在法律允许的最大范围内，我们不对任何间接、附带、特殊、衍生或惩罚性损害负责，
-        也不对利润、数据或商誉损失负责。我们的总责任以你在前 12 个月内为本 App 支付的金额（如有）为上限，
-        法律另有规定的除外。
-      </p>
-
-      <h3>终止</h3>
-      <p>你可随时停止使用本 App。若你违反本条款或滥用本 App，我们可暂停或终止你的使用。</p>
-
-      <h3>适用法律</h3>
-      <p>本条款受你居住国家/地区法律管辖，除非消费者保护法要求适用不同规则。</p>
-
-      <h3>变更</h3>
-      <p>我们可能更新本条款并更新“最后更新日期”。变更后继续使用即表示你接受更新内容。</p>
-
-      <h3>联系方式</h3>
-      <p>Email：<strong>harperchang2025@gmail.com</strong></p>
-    </section>
-  </main>
+<body id="top">
+<a class="skip" href="#policy">跳至条款内容</a>
+<div class="shell">
+<header class="topbar"><span class="brand">Savio</span><nav class="languages" aria-label="语言"><a href="terms-zh-hant.html" lang="zh-Hant" hreflang="zh-Hant">繁體中文</a><a href="terms-zh-hans.html" lang="zh-Hans" hreflang="zh-Hans" aria-current="page">简体中文</a><a href="terms-en.html" lang="en" hreflang="en">English</a></nav></header>
+<main>
+<header class="hero"><h1>服务条款</h1><p class="intro">了解 Savio 的使用规则、订阅与 AI 额度，以及你的权益。</p><p class="meta">更新日期：2026 年 11 月 3 日</p></header>
+<aside class="contact" aria-labelledby="contact-heading"><h2 id="contact-heading">使用支持与条款咨询</h2><p>对条款、订阅或数据处理有疑问，请发送邮件联系我们。</p><a class="email" href="mailto:appmanservice@outlook.com">appmanservice@outlook.com</a><p class="hint">请勿发送密码、完整付款卡号或完整账务备份。</p></aside>
+<details><summary>本页内容</summary><nav aria-label="本页内容"><ol class="toc"><li><a href="#section-1">适用范围</a></li><li><a href="#section-2">资格与使用授权</a></li><li><a href="#section-3">你的数据</a></li><li><a href="#section-4">免费功能、七天体验与 Pro</a></li><li><a href="#section-5">AI 使用额度</a></li><li><a href="#section-6">AI 与 AI 预算守护 输出</a></li><li><a href="#section-7">服务可用性、第三方与变更</a></li><li><a href="#section-8">责任、终止与适用法律</a></li><li><a href="#section-9">联系</a></li></ol></nav></details>
+<article id="policy" aria-label="服务条款">
+<section aria-labelledby="section-1">
+<h2 id="section-1">适用范围</h2>
+<p>本条款适用于 Savio 的记账、预算、储蓄目标及相关功能。使用时应遵守本条款与适用法律；第三方 AI 分享仍须另外明确同意，不因接受本条款自动开启。</p>
+</section>
+<section aria-labelledby="section-2">
+<h2 id="section-2">资格与使用授权</h2>
+<p>用户须年满 13 岁或符合当地法律规定的年龄。我们授予个人、非独占、不可转让的 App 使用授权。除法律允许外，不得擅自复制、修改、逆向工程或转售，不得干扰服务、访问未授权系统或提交违法内容。</p>
+</section>
+<section aria-labelledby="section-3">
+<h2 id="section-3">你的数据</h2>
+<p>你保有输入的账务、预算与目标数据的权利。我们仅按隐私政策及你选择的功能处理数据，以提供服务、支持及履行法律义务。请确认输入内容并定期备份。备份、恢复与导出功能不保证设备丢失或移除 App 后仍能自动恢复未备份数据。</p>
+</section>
+<section aria-labelledby="section-4">
+<h2 id="section-4">免费功能、七天体验与 Pro</h2>
+<p>七天 App 体验按 App 的资格与起止记录计算，本身不创建付费订阅，也不在到期时自动扣款。若另外接受 App Store 的订阅试用或优惠，条件以购买确认页面为准。</p>
+<p>体验到期未订阅时，手动记账仍可使用；云端 AI、储蓄目标、详细报告及其他标注为 Pro 的功能可能受限。试用或订阅到期本身不会删除账务与目标；恢复有效订阅后可重新使用对应权益。</p>
+<p>Pro 提供月订阅与年订阅，价格、币种、周期及优惠以 App Store 购买确认页面为准。Apple 处理付款；订阅按商店条件自动续订，除非你按 App Store 规则及时取消。可在 Apple 账户的订阅管理中管理或取消；取消通常不立即终止已付款期间的权益。退款按 Apple 规则与法定消费者权利办理。</p>
+<p>重新安装或更换设备后可恢复购买以重新验证权益；恢复购买不等于恢复账务，本地数据需使用可用备份等转移方式恢复。删除 App 或撤回 AI 同意不会取消订阅。</p>
+</section>
+<section aria-labelledby="section-5">
+<h2 id="section-5">AI 使用额度</h2>
+<p>目前 Pro 每月包含 100 次 AI 语音文字解析、每日 5 次财务聊天；七天 App 体验期间两项功能每日各 1 次。一次语音解析可生成多笔记账草稿，以一次解析请求计算用量。额度按服务端验证结果为准，未使用额度不累积。</p>
+<p>额度按 UTC 日历周期重置，不按订阅付款周期；台湾时间每日重置为上午 8 时，每月重置为每月 1 日上午 8 时。本地计数用于提示，服务端仍可能有其他设备或已发送请求的用量。请求与响应长度及短时间大量请求可能受安全或容量限制。</p>
+<p>拒绝 AI 分享不产生新的 AI 请求。撤回前已送达并处理的请求可能已计入用量，不因撤回自动退回额度。</p>
+</section>
+<section aria-labelledby="section-6">
+<h2 id="section-6">AI 与 AI 预算守护 输出</h2>
+<p>AI 解析与回复可能出错。保存前请核对金额、币种、收入／支出、分类与日期；采取行动前请核对建议。AI 回复及 AI 预算守护 提醒仅供信息参考，不构成投资、税务、法律或其他专业意见，也不保证节省金额或达成目标。</p>
+</section>
+<section aria-labelledby="section-7">
+<h2 id="section-7">服务可用性、第三方与变更</h2>
+<p>部分功能依赖第三方的云端处理、订阅验证及商店服务。数据接收方、用途、保存与删除方式，请参阅隐私政策。云端功能可能因网络、维护、异常或安全限制暂时无法使用。我们会在合理可行范围提供状态说明及恢复措施。重大权益、额度或数据处理范围变更会适当告知；需要同意时另外获取，不以单纯继续使用代替。额度变更须符合商店规则与有效期间的权益安排。</p>
+</section>
+<section aria-labelledby="section-8">
+<h2 id="section-8">责任、终止与适用法律</h2>
+<p>请合理使用服务并保护本地数据；在法律允许范围，服务按实际可用状态提供。对违法或滥用行为，我们可采取必要的访问限制。你可随时停止使用，但付费订阅应另外通过 Apple 管理。本条款不排除或限制适用法律不允许排除的责任、保障、救济与消费者权利。</p>
+<p>本条款按用户居住国家／地区的法律适用，但强制消费者保护规定另有要求的从其规定。</p>
+</section>
+<section aria-labelledby="section-9">
+<h2 id="section-9">联系</h2>
+<p>条款、订阅与数据处理咨询：<a href="mailto:appmanservice@outlook.com">appmanservice@outlook.com</a>。</p>
+</section>
+</article>
+</main>
+<footer><span>Savio · 服务条款</span><a href="#top">回到页首 ↑</a></footer>
+</div>
+</body>
+</html>
